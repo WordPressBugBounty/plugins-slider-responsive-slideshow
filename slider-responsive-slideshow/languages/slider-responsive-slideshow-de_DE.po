@@ -1,0 +1,384 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2023-12-21 15:59+0530\n"
+"PO-Revision-Date: 2023-12-21 15:59+0530\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __e;__;esc_html_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: featured-plugins/featured-plugins.php:96
+#, php-format
+msgid "%s rating"
+msgstr "%s Bewertung"
+
+#: featured-plugins/featured-plugins.php:157
+msgid "More Details"
+msgstr "Mehr Details"
+
+#: featured-plugins/featured-plugins.php:168
+msgid "Install Now"
+msgstr "Jetzt installieren"
+
+#: featured-plugins/featured-plugins.php:175
+msgid "Update Now"
+msgstr "Jetzt aktualisieren"
+
+#: shortcode.php:232
+msgid ""
+"Sorry! No slides added to the slider shortcode yet. Please add few slide "
+"into shortcode"
+msgstr ""
+"Entschuldigung! Noch keine Folien zum Slider-Shortcode hinzugefügt. Bitte "
+"fügen Sie einige Folien in den Shortcode ein"
+
+#: slider-responsive-slideshow.php:55
+msgid "Slider Responsive"
+msgstr "Responsiver Slider"
+
+#: slider-responsive-slideshow.php:146
+msgid "Shortcode"
+msgstr "Shortcode"
+
+#: slider-responsive-slideshow.php:194
+msgid "Docs"
+msgstr "Dokumente"
+
+#: slider-responsive-slideshow.php:195
+msgid "Featured-Plugin"
+msgstr "Hervorgehobenes Plugin"
+
+#: slider-responsive-slideshow.php:195
+msgid "Featured Plugin"
+msgstr "Hervorgehobenes Plugin"
+
+#: slider-responsive-slideshow.php:196
+msgid "Upgrade Plugin"
+msgstr "Plugin aktualisieren"
+
+#: slider-responsive-slideshow.php:197
+msgid "Our Theme"
+msgstr "Unser Thema"
+
+#: slider-responsive-slideshow.php:212 slider-responsive-slideshow.php:213
+msgid "Slider Responsive Slideshow"
+msgstr "Responsiver Slider Diashow"
+
+#: slider-responsive-slideshow.php:214
+msgid "Parent Item:"
+msgstr "Übergeordnetes Element:"
+
+#: slider-responsive-slideshow.php:215
+msgid "All Slider"
+msgstr "Alle Slider"
+
+#: slider-responsive-slideshow.php:216 slider-responsive-slideshow.php:217
+msgid "Add New Slider"
+msgstr "Neuen Slider hinzufügen"
+
+#: slider-responsive-slideshow.php:218
+msgid "New Slider"
+msgstr "Neuer Slider"
+
+#: slider-responsive-slideshow.php:219
+msgid "Edit Slider"
+msgstr "Slider bearbeiten"
+
+#: slider-responsive-slideshow.php:220
+msgid "Update Slider"
+msgstr "Slider aktualisieren"
+
+#: slider-responsive-slideshow.php:221
+msgid "Search Slider"
+msgstr "Slider suchen"
+
+#: slider-responsive-slideshow.php:222
+msgid "Slider Not found"
+msgstr "Slider nicht gefunden"
+
+#: slider-responsive-slideshow.php:223
+msgid "Slider Not found in Trash"
+msgstr "Slider im Papierkorb nicht gefunden"
+
+#: slider-responsive-slideshow.php:226
+msgid "Slider"
+msgstr "Slider"
+
+#: slider-responsive-slideshow.php:227
+msgid "Custom Post Type For Slider"
+msgstr "Benutzerdefinierter Beitragstyp für Slider"
+
+#: slider-responsive-slideshow.php:257
+msgid "Copy Slider Responsive Slideshow Shortcode"
+msgstr "Kopieren Sie den Shortcode der responsiven Slider-Diashow"
+
+#: slider-responsive-slideshow.php:258
+msgid "Add Image Slides"
+msgstr "Bildfolien hinzufügen"
+
+#: slider-responsive-slideshow.php:265
+msgid "Shortcode copied to clipboard!"
+msgstr "Shortcode in die Zwischenablage kopiert!"
+
+#: slider-responsive-slideshow.php:266
+msgid ""
+"Copy & Embed shotcode into any Page/ Post / Text Widget to display Slider."
+msgstr ""
+"Kopieren und einbetten Sie den Shortcode in jede Seite/Beitrag/Text-Widget, "
+"um den Slider anzuzeigen."
+
+#: slider-responsive-slideshow.php:309
+msgid "ADD IMAGES"
+msgstr "BILDER HINZUFÜGEN"
+
+#: slider-settings.php:39 slider-settings.php:64
+msgid "Add Images"
+msgstr "Bilder hinzufügen"
+
+#: slider-settings.php:42
+msgid "Configure"
+msgstr "Konfigurieren"
+
+#: slider-settings.php:45 slider-settings.php:172
+msgid "Auto Play"
+msgstr "Automatisches Abspielen"
+
+#: slider-settings.php:48
+msgid "Navigation Settings"
+msgstr "Navigationseinstellungen"
+
+#: slider-settings.php:51 slider-settings.php:340
+msgid "Title & Description Settings"
+msgstr "Titel- und Beschreibungseinstellungen"
+
+#: slider-settings.php:54 slider-settings.php:527
+msgid "Custom CSS"
+msgstr "Benutzerdefiniertes CSS"
+
+#: slider-settings.php:57 slider-settings.php:549
+msgid "Upgrade To Pro"
+msgstr "Auf Pro-Version upgraden"
+
+#: slider-settings.php:67
+msgid "Delete All Slide"
+msgstr "Alle Folien löschen"
+
+#: slider-settings.php:95
+msgid "Configure settings"
+msgstr "Einstellungen konfigurieren"
+
+#: slider-settings.php:99
+msgid "Slides"
+msgstr "Folien"
+
+#: slider-settings.php:100
+msgid "Set numbers of slider you want to display at a time like 1, 2, 3, 4, 10"
+msgstr ""
+"Legen Sie die Anzahl der Slider fest, die Sie gleichzeitig anzeigen möchten, "
+"wie 1, 2, 3, 4, 10"
+
+#: slider-settings.php:120
+msgid "Slide Speed"
+msgstr "Geschwindigkeit der Folie"
+
+#: slider-settings.php:121
+msgid ""
+"Set slide transition speed in milliseconds like 200, 400, 500, 700, 1000"
+msgstr ""
+"Stellen Sie die Übergangsgeschwindigkeit der Folie in Millisekunden ein, wie "
+"200, 400, 500, 700, 1000"
+
+#: slider-settings.php:141
+msgid "Slide Margin"
+msgstr "Folienrand"
+
+#: slider-settings.php:142 slider-settings.php:155
+msgid "Buy Premium Version To Get This Feature"
+msgstr "Kaufen Sie die Premium-Version, um diese Funktion zu erhalten"
+
+#: slider-settings.php:154
+msgid "Slide Transitions"
+msgstr "Folienübergänge"
+
+#: slider-settings.php:168
+msgid "Auto Play &  Slider settings"
+msgstr "Automatisches Abspielen & Slider-Einstellungen"
+
+#: slider-settings.php:173 slider-settings.php:271
+msgid "Set auto play to slides automatically"
+msgstr "Automatisches Abspielen für Folien einstellen"
+
+#: slider-settings.php:191 slider-settings.php:222 slider-settings.php:289
+#: slider-settings.php:363 slider-settings.php:394 slider-settings.php:425
+msgid "Yes"
+msgstr "Ja"
+
+#: slider-settings.php:198 slider-settings.php:229 slider-settings.php:296
+#: slider-settings.php:370 slider-settings.php:401 slider-settings.php:432
+msgid "No"
+msgstr "Nein"
+
+#: slider-settings.php:203
+msgid "Auto Height"
+msgstr "Automatische Höhe"
+
+#: slider-settings.php:204
+msgid "Set Set slider auto height"
+msgstr "Automatische Höhe des Sliders einstellen"
+
+#: slider-settings.php:234
+msgid "Touch Slide"
+msgstr "Touch-Slide"
+
+#: slider-settings.php:235
+msgid "Set touch slide to slides using mouse drag event"
+msgstr "Touch-Slide für Folien mit Mauszieh-Ereignis einstellen"
+
+#: slider-settings.php:253
+msgid "Enable"
+msgstr "Aktivieren"
+
+#: slider-settings.php:260
+msgid "Disable"
+msgstr "Deaktivieren"
+
+#: slider-settings.php:266
+msgid "Slider Navigation Settings"
+msgstr "Slider-Navigationseinstellungen"
+
+#: slider-settings.php:270
+msgid "Slider Navigation"
+msgstr "Slider-Navigation"
+
+#: slider-settings.php:302
+msgid " Navigation Text For - Next Button"
+msgstr " Navigationstext für - Nächster Button"
+
+#: slider-settings.php:303
+msgid "Set navigation next button text"
+msgstr "Navigationstext für den nächsten Button festlegen"
+
+#: slider-settings.php:320
+msgid " Navigation Text For - Previous Button"
+msgstr " Navigationstext für - Vorheriger Button"
+
+#: slider-settings.php:321
+msgid "Set navigation previous button text"
+msgstr "Navigationstext für den vorherigen Button festlegen"
+
+#: slider-settings.php:344
+msgid "Show Slide Title Text"
+msgstr "Folientiteltext anzeigen"
+
+#: slider-settings.php:345
+msgid "Set yes or no to display or hide slide title text"
+msgstr ""
+"Ja oder Nein einstellen, um Folientiteltext anzuzeigen oder zu verbergen"
+
+#: slider-settings.php:375
+msgid "Show Slide Description Text"
+msgstr "Folienbeschreibungstext anzeigen"
+
+#: slider-settings.php:376
+msgid "Set yes or no to display or hide slide title description"
+msgstr ""
+"Ja oder Nein einstellen, um Folientitelbeschreibung anzuzeigen oder zu "
+"verbergen"
+
+#: slider-settings.php:406
+msgid "Show Slide Link"
+msgstr "Folienlink anzeigen"
+
+#: slider-settings.php:407
+msgid "Set yes or no to display or hide slide link"
+msgstr "Ja oder Nein einstellen, um Folienlink anzuzeigen oder zu verbergen"
+
+#: slider-settings.php:438
+msgid "Set Link On"
+msgstr "Link setzen auf"
+
+#: slider-settings.php:439
+msgid "Set link url on slide or on custom text link"
+msgstr "Link-URL auf Folie oder auf benutzerdefinierten Textlink setzen"
+
+#: slider-settings.php:457
+msgid "On Slide"
+msgstr "Auf Folie"
+
+#: slider-settings.php:464
+msgid "On Custom Text"
+msgstr "Auf benutzerdefiniertem Text"
+
+#: slider-settings.php:469
+msgid "Custom Slide Link Text"
+msgstr "Benutzerdefinierter Folienlinktext"
+
+#: slider-settings.php:470
+msgid "Set custom text for slide link text"
+msgstr "Benutzerdefinierten Text für Folienlinktext festlegen"
+
+#: slider-settings.php:488
+msgid "Slider All Text Alignment - Title, Description, Link"
+msgstr "Slider Gesamttextausrichtung - Titel, Beschreibung, Link"
+
+#: slider-settings.php:489
+msgid "Set text alignment below slides like left, right or center"
+msgstr ""
+"Textausrichtung unter Folien festlegen, wie links, rechts oder zentriert"
+
+#: slider-settings.php:507
+msgid "Left"
+msgstr "Links"
+
+#: slider-settings.php:514
+msgid "Center"
+msgstr "Zentriert"
+
+#: slider-settings.php:521
+msgid "Right"
+msgstr "Rechts"
+
+#: slider-settings.php:531
+msgid "Type Custum CSS"
+msgstr "Benutzerdefiniertes CSS eingeben"
+
+#: slider-settings.php:532
+msgid "Apply own css on image gallery and dont use style tag"
+msgstr "Eigenes CSS auf Bildergalerie anwenden und kein Style-Tag verwenden"
+
+#: slider-settings.php:553
+msgid "Upgrade To Premium For Unloack More Features & Settings"
+msgstr ""
+"Auf Premium upgraden, um mehr Funktionen & Einstellungen freizuschalten"
+
+#: slider-settings.php:557
+msgid "Offer:"
+msgstr "Angebot:"
+
+#: slider-settings.php:557
+msgid "Upgrade To Premium Just In Half Price"
+msgstr "Auf Premium upgraden zum halben Preis"
+
+#: slider-settings.php:559
+msgid "Check Premium Version Live Demo"
+msgstr "Live-Demo der Premium-Version überprüfen"
+
+#: slider-settings.php:560
+msgid "Buy Premium Version"
+msgstr "Premium-Version kaufen"
+
+#~ msgid "Get More Free WordPress Plugin From A WP Life"
+#~ msgstr "Erhalten Sie mehr kostenlose WordPress-Plugins von A WP Life"
+
+#~ msgid "By"
+#~ msgstr "Von"
+
+#~ msgid "Last Updated:"
+#~ msgstr "Zuletzt aktualisiert:"
