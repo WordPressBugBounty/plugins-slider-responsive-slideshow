@@ -1,0 +1,1 @@
+# plugins-slider-responsive-slideshow
