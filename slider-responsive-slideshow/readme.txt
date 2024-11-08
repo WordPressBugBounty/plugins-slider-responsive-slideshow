@@ -3,8 +3,8 @@ Contributors: awordpresslife, razipathhan, hanif0991, muhammadshahid, fkfaisalkh
 Donate link: https://paypal.me/awplife
 Tags: slider, slider gallery, image slider, photo Slider, gallery slideshow
 Requires at least: 3.8
-Tested up to: 6.6.1
-Stable tag: 1.4.7
+Tested up to: 6.6.2
+Stable tag: 1.4.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -148,9 +148,14 @@ The following are other recommended plugins by the author:
 
 == Changelog ==
 
+= 1.4.8 =
+
+* Tested plugin for wordpress 6.6.2
+
 = 1.4.7 =
 
 * Tested plugin for wordpress 6.6.1
+
 
 = 1.4.6 =
 
