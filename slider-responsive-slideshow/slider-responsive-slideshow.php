@@ -5,7 +5,7 @@
 Plugin Name: Slider Responsive Slideshow
 Plugin URI:  https://awplife.com/wordpress-plugins/slider-responsive-slideshow-premium/
 Description: An Easy Simple Responsive Beautiful Powerful CSS & JS Based WordPress Slider Plugin
-Version:     1.4.9
+Version:     1.5.0
 Author:      A WP Life
 Author URI:  https://awplife.com/
 Text Domain: slider-responsive-slideshow
@@ -42,7 +42,7 @@ if ( ! class_exists( 'Slider_Responsive' ) ) {
 			/**
 			 * Plugin Version
 			 */
-			define( 'SR_PLUGIN_VER', '1.4.9' );
+			define( 'SR_PLUGIN_VER', '1.5.0' );
 
 			/**
 			 * Plugin Text Domain
