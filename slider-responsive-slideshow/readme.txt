@@ -2,9 +2,9 @@
 Contributors: awordpresslife, razipathhan, hanif0991, muhammadshahid, fkfaisalkhan007, sharikkhan007, zishlife, FARAZFRANK
 Donate link: https://paypal.me/awplife
 Tags: slider, slider gallery, image slider, photo Slider, gallery slideshow
-Requires at least: 3.8
+Requires at least: 4
 Tested up to: 6.7.2
-Stable tag: 1.5.0
+Stable tag: 1.5.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -147,6 +147,11 @@ The following are other recommended plugins by the author:
 7. Slide Show Preview
 
 == Changelog ==
+
+= 1.5.1 =
+
+* Apostrophy saving issue fixed.
+* Tested plugin for wordpress 6.8.1
 
 = 1.5.0 =
 

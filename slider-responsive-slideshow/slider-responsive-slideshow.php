@@ -5,7 +5,7 @@
 Plugin Name: Slider Responsive Slideshow
 Plugin URI:  https://awplife.com/wordpress-plugins/slider-responsive-slideshow-premium/
 Description: An Easy Simple Responsive Beautiful Powerful CSS & JS Based WordPress Slider Plugin
-Version:     1.5.0
+Version:     1.5.1
 Author:      A WP Life
 Author URI:  https://awplife.com/
 Text Domain: slider-responsive-slideshow
@@ -42,7 +42,7 @@ if ( ! class_exists( 'Slider_Responsive' ) ) {
 			/**
 			 * Plugin Version
 			 */
-			define( 'SR_PLUGIN_VER', '1.5.0' );
+			define( 'SR_PLUGIN_VER', '1.5.1' );
 
 			/**
 			 * Plugin Text Domain
@@ -313,7 +313,7 @@ if ( ! class_exists( 'Slider_Responsive' ) ) {
 				<li class="slide">
 					<img class="new-slide" src="<?php echo esc_url( $thumbnail[0] ); ?>" alt="" style="height: 150px; width: 98%; border-radius: 8px;">
 					<input type="hidden" id="slide-ids[]" name="slide-ids[]" value="<?php echo esc_attr( $id ); ?>" />
-					<input type="text" name="slide-title[]" id="slide-title[]" style="width: 98%;" placeholder="Slide Title" value="<?php echo esc_html( get_the_title( $id ) ); ?>">
+					<input type="text" name="slide-title[]" id="slide-title[]" style="width: 98%;" placeholder="Slide Title" value="<?php echo esc_attr( get_the_title( $id ) ); ?>">
 					<textarea name="slide-desc[]" id="slide-desc[]" placeholder="Slide Description" style="height: 108px; width: 98%;"><?php echo esc_html( $attachment->post_content ); ?></textarea>
 					<input type="text" name="slide-link[]" id="slide-link[]" style="width: 98%;" placeholder="Slide Link URL">
 					<a class="pw-trash-icon" name="remove-slide" id="remove-slide" href="#"><span class="dashicons dashicons-trash"></span></a>
@@ -322,17 +322,15 @@ if ( ! class_exists( 'Slider_Responsive' ) ) {
 			}
 		}
 
+
 		public function _ajax_slide_responsive() {
-			if ( current_user_can( 'manage_options' ) ) {
-				if (isset( $_POST['sr_add_images_nonce'] ) && wp_verify_nonce( $_POST['sr_add_images_nonce'], 'sr_add_images' ) ) {
-					echo esc_attr( $this->_sr_ajax_callback_function ( sanitize_text_field( $_POST['slideId'] ) ) );
-					die;
-				} else {
-					print 'Sorry, your nonce did not verify.';
-					exit;
-				}
+			if ( current_user_can( 'manage_options' ) && isset( $_POST['sr_add_images_nonce'] ) && wp_verify_nonce( $_POST['sr_add_images_nonce'], 'sr_add_images' ) ) {
+				// let the callback print the <li> markup directly
+				$this->_sr_ajax_callback_function( sanitize_text_field( $_POST['slideId'] ) );
+				wp_die(); // always use wp_die() in AJAX handlers
 			}
 		}
+
 
 		public function _sr_save_settings( $post_id ) {
 			if (current_user_can('manage_options')) {
@@ -380,9 +378,7 @@ if ( ! class_exists( 'Slider_Responsive' ) ) {
 
 						$allslidesetting = array(
 							'slide-ids'    => $image_ids,
-							'slide-title'  => $image_titles,
 							'slide-link'   => $slide_link,
-							'slide-desc'   => $image_descs,
 							'slides'       => $slides,
 							'srspeed'      => $srspeed,
 							'autoplay'     => $autoplay,

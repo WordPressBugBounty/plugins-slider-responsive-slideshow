@@ -115,7 +115,7 @@ wp_enqueue_script( 'awl-bootstrap-js', SR_PLUGIN_URL . 'js/bootstrap.min.js', ar
 									<img class="new-slide" src="<?php echo esc_url( $thumbnail[0] ); ?>" alt="" style="height: 150px; width: 98%; border-radius: 8px;">
 									<input type="hidden" id="slide-ids[]" name="slide-ids[]" value="<?php echo esc_attr( $id ); ?>" />
 									<!-- Slide Title, Caption, Alt Text, Description-->
-									<input type="text" name="slide-title[]" id="slide-title[]" style="width: 98%;"  placeholder="Slide Title" value="<?php echo esc_html( get_the_title( $id ) ); ?>">
+									<input type="text" name="slide-title[]" id="slide-title[]" style="width: 98%;"  placeholder="Slide Title" value="<?php echo esc_attr( get_the_title( $id ) ); ?>">
 									<textarea name="slide-desc[]" id="slide-desc[]" placeholder="Slide Description" style="height: 108px; width: 98%;"><?php echo esc_html( $attachment->post_content ); ?></textarea>
 									<input type="text" name="slide-link[]" id="slide-link[]" style="width: 98%;" placeholder="Slide Link URL" value="<?php echo esc_url( $slide_link ); ?>">
 									<a class="pw-trash-icon" name="remove-slide" id="remove-slide" href="#"><span class="dashicons dashicons-trash"></span></a>
