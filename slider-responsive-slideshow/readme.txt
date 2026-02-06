@@ -1,191 +1,154 @@
-﻿=== Slider Responsive Slideshow - Image slider, Gallery slideshow ===
+﻿=== Responsive Slideshow ===
 Contributors: awordpresslife, razipathhan, hanif0991, muhammadshahid, fkfaisalkhan007, sharikkhan007, zishlife, FARAZFRANK
 Donate link: https://paypal.me/awplife
-Tags: slider, slider gallery, image slider, photo Slider, gallery slideshow
-Requires at least: 4
-Tested up to: 6.8.2
-Stable tag: 1.5.3
+Tags: slider, image slider, responsive slider, carousel, slideshow
+Requires at least: 4.0
+Tested up to: 6.9
+Stable tag: 1.5.4
+Requires PHP: 7.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Responsive slider plugin for your WordPres website.
-Carousel, Responsive Image Slider, Photo slider, Slider Gallery.
+Create responsive image sliders with carousel effects, touch navigation, and custom animations for your website.
 
 == Description ==
 
-= Carousel, Photo slider =
+Responsive Slideshow helps you build image sliders that work smoothly on all devices. Whether you need a simple photo slider for your homepage or a carousel to showcase client logos, this plugin handles it without any coding.
 
-The Slider Responsive Slideshow WordPress Plugin is the best solution for those who want to demonstrate images in a superb way: you can reach the result.
+The slider adjusts automatically to different screen sizes, so your images look sharp on desktops, tablets, and phones. Touch and swipe gestures work out of the box, making it easy for mobile visitors to browse through your slides.
 
-Many sites need to display the logo in slideshow responsive slider/carousel on their website. Slider Responsive Slideshow help to display partners, clients or Sponsor’s Logo in your WordPress site quickly and easily, simply select images from your WordPress Media Library, drag and drop them into place, and then set the slide captions and links.
-
-Choose one of 4 different slideshow effects, and use our provided shortcode or template to embed the slideshows.
-
-Slider Responsive Slideshow aims to make your website more attractive and good-looking, The slider has many functions, you can create the slider with photos.
-
-Slideshow Plugin Fully Responsive Light Weight Easy Powerful WordPress Slideshow Plugin
-
-Slider plugin provides a powerful engine for adding photo or image slides, with the ability to batch upload, import media data, add/delete/rearrange/sort slides and more. You can publish slider at front-end on blog post, page and in all widget areas available in theme.
-
-Create slider from plugin admin dashboard and copy the generated shortcode at bottom of setting. Embed copied shortcode into any blog Page, post, widget area and publish on your blog.
+**View Pro Demo:** **[Slider Responsive Slideshow Premium Demo](https://awplife.com/demo/slider-responsive-slideshow-premium/)**
+**Where To Buy:** **[Buy Slider Responsive Slideshow Premium](https://awplife.com/wordpress-plugins/slider-responsive-slideshow-wordpress-plugin/)**
 
 https://www.youtube.com/watch?v=l5FYR-FuHIw
 
-Q. How slider shortcode look like?
+= What You Can Do =
 
-Ans. It's look like: `[awl-slider id=111]` Here `id = 111` is your slider post id.
+* Display photos, portfolio images, or product showcases in a sliding format
+* Add client or partner logos in a carousel layout
+* Create hero sliders with titles and descriptions
+* Embed sliders in pages, posts, or widget areas using shortcodes
 
-**Upgrade To Premium Plugin - <a href="https://awplife.com/wordpress-plugins/slider-responsive-slideshow-wordpress-plugin/">Click Here</a>**
+= How It Works =
 
-**Check Premium Plugin Demo - <a href="https://awplife.com/demo/slider-responsive-slideshow-premium/">Click Here</a>**
+1. Go to the plugin menu and click "Add New Slider"
+2. Upload your images from the Media Library
+3. Arrange slides by drag and drop
+4. Add titles, descriptions, and links to each slide
+5. Copy the shortcode and paste it anywhere on your site
 
-= RESPONSIVE Plugin PRO FEATURES AND DEMO =
+The shortcode looks like this: `[awl-slider id=123]` where 123 is your slider ID.
 
-> #### **Demo for Lite and Pro Version**
+= Free Features =
 
-> * [Slider Responsive Sideshow Premium](https://awplife.com/demo/slider-responsive-slideshow-premium/ "Slider Responsive Sideshow Premium")
+* Responsive design that adapts to any screen size
+* Touch and swipe support for mobile devices
+* Auto-play with adjustable timing
+* 4 transition effects to choose from
+* Navigation arrows and dots
+* Add titles and descriptions to slides
+* Link slides to any URL
+* Use in sidebar and footer widgets
+* Drag and drop slide ordering
+* Works with all major browsers
+
+= Pro Features =
+
+* Multiple slides visible at once (carousel mode)
+* Advanced transition animations
+* Custom CSS support for styling
+* Additional navigation styles
+* Content slides with text overlays
+* Priority support
+
+= More Demo Links For Pro Version =
+
 > * [Multiple Slides](https://awplife.com/demo/slider-responsive-slideshow-premium/multiple-slides/ "Multiple Slides")
 > * [Transitions Effect](https://awplife.com/demo/slider-responsive-slideshow-premium/transitions-effect/ "Transitions Effect")
 > * [Slider In Slidebar Widget](https://awplife.com/demo/slider-responsive-slideshow-premium/slider-in-slidebar-widget/ "Slider In Sidebar Widget")
 > * [Slider With Content](https://awplife.com/demo/slider-responsive-slideshow-premium/slider-with-content/ "Slider With Content")
-> * [Try Admin Demo](https://awplife.com/demo/slider-responsive-slideshow-premium-admin/ "Try Admin Demo")
-> * [Buy Premium Version](https://awplife.com/account/signup/slider-responsive-slideshow "Buy Premium Version")
-
-
-**Major features in standard slider plugin include:**
-
-* Responsive Design
-* Carousel slideshow
-* Customization Settings
-* Sidebar Widget Slide Show
-* Footer Widget Slide Show
-* Standard WordPress Import and Export
-* Slide Navigation
-* Touch Slide
-* Auto Play Slide Show
-* Cross Browser Compatibility
-* Navigation Control
-* Slider with Title & Descriptions
-* Slide Link
-* Footer Widget Slider
-* Content Slider
-
-**<a href="https://awplife.com/wordpress-plugins/slider-responsive-slideshow-premium/">LEARN MORE ABOUT - Responsive Slider Premium</a>**
 
 == Installation ==
-Install This Plugin either via the WordPress.org plugin directory, or by uploading the files to your server.
 
-After activating responsive slidshow , go to plugin menu.
-
-Click Add New Slider and upload image.
-
-Publish the slider and copy the shortcode from the settings page and embed shortcode on any Page/Post/Text Widget.
-
-That's it. You're ready to go!
+1. Upload the plugin folder to `/wp-content/plugins/` directory or install directly from WordPress plugins screen
+2. Activate the plugin through the Plugins menu
+3. Go to the Responsive Slideshow menu in your dashboard
+4. Click "Add New Slider" and upload your images
+5. Configure slider settings as needed
+6. Copy the shortcode from the settings page
+7. Paste the shortcode into any page, post, or text widget
 
 == Frequently Asked Questions ==
 
-Have any queries?
+= How do I create my first slider? =
 
-Please post your question on plugin support forum
+After activating the plugin, go to the Responsive Slideshow menu and click "Add New Slider". Upload images from your Media Library, arrange them in your preferred order, and save. Copy the generated shortcode and paste it where you want the slider to appear.
 
-https://wordpress.org/support/plugin/slider-responsive-slideshow/
+= Can I add links to individual slides? =
 
-= Recommended Plugins =
+Yes, each slide has a link field where you can enter any URL. When visitors click on that slide, they will be taken to the linked page.
 
-The following are other recommended plugins by the author:
+= Is the slider mobile-friendly? =
 
-* [Portfolio Filter Gallery](https://wordpress.org/plugins/portfolio-filter-gallery/ "Best Portfolio Filter Gallery") - The Gallery Plugin to create awesome Portfolio Filter Gallery Plugin in minutes. 
+Absolutely. The slider is fully responsive and includes touch/swipe support. It automatically adjusts to fit any screen size and works smoothly on phones and tablets.
 
-**Buy Premium Plugin - <a href="https://awplife.com/wordpress-plugins/portfolio-filter-gallery-premium/">Click Here</a>**
+= How many images can I add to a slider? =
 
-**Buy Premium Plugin - <a href="https://awplife.com/wordpress-plugins/media-slider-premium/">Click Here</a>**
+There is no fixed limit. You can add as many images as you need, though keeping it reasonable (under 20-30) helps with page load times.
 
-* [Best Weather Effect Plugin](https://wordpress.org/plugins/weather-effect/ "Best Weather Effect") - Very Simple And Easy To Design Your Sites With Multiple Effects.
+= Can I use the slider in my sidebar or footer? =
 
-**Buy Premium Plugin - <a href="https://awplife.com/wordpress-plugins/weather-effect-premium/">Click Here</a>**
+Yes, you can paste the slider shortcode into any text widget. The slider will resize to fit the widget area automatically.
 
-* [Best Grid Gallery Plugin](https://wordpress.org/plugins/new-grid-gallery/ "Best Grid Galley Plugin") - Easy Grid Gallery Widget - Displaying your image in Page & Post widget/sidebar area with very easy.Allows you to customize it to looking exactly what you want.
+= Does it support touch and swipe gestures? =
 
-**Buy Premium Plugin - <a href="https://awplife.com/wordpress-plugins/grid-gallery-premium/">Click Here</a>**
+Yes, touch and swipe navigation is built in. Mobile users can swipe left or right to browse through slides naturally.
 
-* [Social Media Plugin](https://wordpress.org/plugins/new-social-media-widget/ "Social Media") - Display your Social Media Plugin into Widget/Sidebar in WordPress site with very easily.
+= How do I change the slider speed? =
 
-**Buy Premium Plugin - <a href="https://awplife.com/wordpress-plugins/social-media-widget-premium//">Click Here</a>**
+In the slider settings, you will find options to control auto-play speed and transition duration. Adjust these values to match your preference.
 
-* [Photo Gallery Plugin](https://wordpress.org/plugins/new-photo-gallery/ "Image Gallery") - Displays all  Photo Gallery, Video Gallery, Link Gallery, Map Gallery into Wordpress in just a few seconds.
+= Can I add captions to my slides? =
 
-**Buy Premium Plugin - <a href="https://awplife.com/wordpress-plugins/photo-gallery-premium/">Click Here</a>**
+Yes, each slide supports a title and description field. The text appears as an overlay on the slide, and you can style it using the available options.
 
-* [Image Gallery Plugin](https://wordpress.org/plugins/new-image-gallery/ "Image Gallery") - Gallery Lightbox - Displays all gallery images into the lightbox slider in just a few seconds.
+= How do I show multiple slides at once like a carousel? =
 
-**Buy Premium Plugin - <a href="https://awplife.com/wordpress-plugins/image-gallery-premium/">Click Here</a>**
+The carousel mode with multiple visible slides is available in the Pro version. It lets you display 2, 3, or more slides simultaneously.
 
-* [Contact Form](https://wordpress.org/plugins/new-contact-form-widget/ "Contact Form Plugin") - Contact Form Widget Shortcode Plugin For WordPress.
+= The slider is not showing on my page. What should I check? =
 
-**Buy Premium Plugin - <a href="https://awplife.com/wordpress-plugins/contact-form-premium/">Click Here</a>**
-
-**Buy Premium Plugin - <a href="https://awplife.com/wordpress-plugins/responsive-slider-gallery-premium/">Click Here</a>**
-
-* [Video Gallery Plugin](https://wordpress.org/plugins/new-video-gallery/ "Best Video Gallery Plugin") - The Best Responsive video gallery For Wordpress.
-
-**Buy Premium Plugin - <a href="https://awplife.com/wordpress-plugins/video-gallery-premium/">Click Here</a>**
-
-* [Facebook Like Share Follow Button](https://wordpress.org/plugins/new-facebook-like-share-follow-button/ "Facebook Like Share Follow Button") - Display your Facebook Like Share Follow Button Plugin into Page/Post & Widget/Sidebar in WordPress sites with very easily.
- 
-* [Google Plus Badge](https://wordpress.org/plugins/new-google-plus-badge/ "Google Plus Badge") - Google+ Badge & Profile Widget For Show Into Widget & sidebar
-
-* [Facebook Likebox Plugin](https://wordpress.org/plugins/facebook-likebox-widget-and-shortcode/ "Facebook Likebox Plugin") - Facebook Light Box Plugin For Wordpress 
+Make sure you have published the slider (not just saved as draft) and that you are using the correct shortcode with the right ID. Also check if your theme has any JavaScript conflicts.
 
 == Screenshots ==
-1. Slide Show Preview
-2. Slide Show Preview
-3. Slide Show Preview
-4. Slide Show Preview
-5. Slide Show Preview
-6. Slide Show Preview
-7. Slide Show Preview
+
+1. Slider front-end preview
+2. Slider with navigation arrows
+3. Carousel layout example
+4. Admin dashboard - slider settings
+5. Mobile responsive view
+6. Widget area placement
+7. Slide configuration panel
 
 == Changelog ==
 
+= 1.5.4 =
+* Tested with WordPress 6.9
+
 = 1.5.3 =
-* Tested plugin for wordpress 6.8.2
+* Tested with WordPress 6.8.3
 
 = 1.5.2 =
-
-* Text domain error fixed.
+* Fixed text domain error
 
 = 1.5.1 =
-
-* Apostrophy saving issue fixed.
-* Tested plugin for wordpress 6.8.1
+* Fixed apostrophe saving issue
+* Tested with WordPress 6.8.1
 
 = 1.5.0 =
-
-* Tested plugin for wordpress 6.7.2
-
-= 1.4.9 =
-
-* Tested plugin for wordpress 6.7.1
-
-= 1.4.8 =
-
-* Tested plugin for wordpress 6.6.2
-
-= 1.4.7 =
-
-* Tested plugin for wordpress 6.6.1
-
-
-= 1.4.6 =
-
-* Tested plugin for wordpress 6.5.4
-
-= 1.4.5 =
-
-* minor bugs fixed.
-* Tested plugin for wordpress 6.5.3
-
+* Tested with WordPress 6.7.2
 
 == Upgrade Notice ==
-This is an initial release. Start with version 0.1.0 and share your feedback <a href="https://wordpress.org/support/view/plugin-reviews/slider-responsive-slideshow/">here</a>.
+
+= 1.5.4 =
+Compatibility update for WordPress 6.9. Update recommended for all users.

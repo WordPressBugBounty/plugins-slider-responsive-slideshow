@@ -1,16 +1,18 @@
 <?php
-
 /**
-@package Slider Responsive Slideshow
-Plugin Name: Slider Responsive Slideshow
-Plugin URI:  https://awplife.com/wordpress-plugins/slider-responsive-slideshow-premium/
-Description: An Easy Simple Responsive Beautiful Powerful CSS & JS Based WordPress Slider Plugin
-Version:     1.5.3
-Author:      A WP Life
-Author URI:  https://awplife.com/
-Text Domain: slider-responsive-slideshow
-Domain Path: /languages
-License:     GPL2
+ * Plugin Name:       Slider Responsive Slideshow
+ * Plugin URI:        https://awplife.com/wordpress-plugins/slider-responsive-slideshow-premium/
+ * Description:       An Easy Simple Responsive Beautiful Powerful CSS & JS Based WordPress Slider Plugin
+ * Version:           1.5.4
+ * Requires at least: 5.4
+ * Requires PHP:      7.2
+ * Author:            A WP Life
+ * Author URI:        https://profiles.wordpress.org/awordpresslife
+ * License:           GPL v2 or later
+ * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
+ * Text Domain:       slider-responsive-slideshow
+ * Domain Path:       /languages
+ * License:           GPL2
 
 Slider Responsive Slideshow is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -42,7 +44,7 @@ if ( ! class_exists( 'Slider_Responsive' ) ) {
 			/**
 			 * Plugin Version
 			 */
-			define( 'SR_PLUGIN_VER', '1.5.3' );
+			define( 'SR_PLUGIN_VER', '1.5.4' );
 
 			/**
 			 * Plugin Text Domain
