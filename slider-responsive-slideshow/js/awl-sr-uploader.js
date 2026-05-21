@@ -38,8 +38,8 @@ jQuery(function(jQuery) {
 			/**
 			 * Delete Slide Callback Function
 			 */
-            this.ul.on('click', '#remove-slide', function() {
-                if (confirm('Do you wnat to delete this slide?')) {
+            this.ul.on('click', '.pw-trash-icon', function() {
+                if (confirm('Do you want to delete this slide?')) {
                     jQuery(this).parent().fadeOut(700, function() {
                         jQuery(this).remove();
                     });
