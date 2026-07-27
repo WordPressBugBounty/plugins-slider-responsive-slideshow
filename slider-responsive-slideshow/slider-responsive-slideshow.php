@@ -6,7 +6,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Plugin Name:       Slider Responsive Slideshow
  * Plugin URI:        https://awplife.com/wordpress-plugins/slider-responsive-slideshow-premium/
  * Description:       An Easy Simple Responsive Beautiful Powerful CSS & JS Based WordPress Slider Plugin
- * Version:           1.6.0
+ * Version:           1.6.1
  * Requires at least: 5.4
  * Requires PHP:      7.2
  * Author:            A WP Life
@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Text Domain:       slider-responsive-slideshow
  * Domain Path:       /languages
  * License:           GPL2
-
+ 
 Slider Responsive Slideshow is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 2 of the License, or
@@ -44,7 +44,7 @@ if ( ! class_exists( 'Slider_Responsive' ) ) {
 			/**
 			 * Plugin Version
 			 */
-			define( 'AWLSR_PLUGIN_VER', '1.6.0' );
+			define( 'AWLSR_PLUGIN_VER', '1.6.1' );
 
 			/**
 			 * Plugin Name
@@ -339,73 +339,74 @@ if ( ! class_exists( 'Slider_Responsive' ) ) {
 			if ( 'slider_responsive' !== get_post_type( $post_id ) ) {
 				return;
 			}
+			if ( ! isset( $_POST['sr_save_nonce'] ) ) {
+				return;
+			}
+			if ( ! wp_verify_nonce( $_POST['sr_save_nonce'], 'sr_save_settings' ) ) {
+				print 'Sorry, your nonce did not verify.';
+				exit;
+			}
 			if ( ! current_user_can( 'edit_post', $post_id ) ) {
 				return;
 			}
 
 			if ( current_user_can( 'manage_options' ) ) {
-				if ( isset( $_POST['sr_save_nonce'] ) && wp_verify_nonce( $_POST['sr_save_nonce'], 'sr_save_settings' ) ) {
+				$slides       = isset( $_POST['slides'] ) ? sanitize_text_field( $_POST['slides'] ) : '1';
+				$srspeed      = isset( $_POST['srspeed'] ) ? sanitize_text_field( $_POST['srspeed'] ) : '200';
+				$autoplay     = isset( $_POST['autoplay'] ) ? sanitize_text_field( $_POST['autoplay'] ) : 'true';
+				$navigation   = isset( $_POST['navigation'] ) ? sanitize_text_field( $_POST['navigation'] ) : 'false';
+				$navigation_n = isset( $_POST['navigation_n'] ) ? sanitize_text_field( $_POST['navigation_n'] ) : 'Next';
+				$navigation_p = isset( $_POST['navigation_p'] ) ? sanitize_text_field( $_POST['navigation_p'] ) : 'Prev';
+				$auto_height  = isset( $_POST['auto_height'] ) ? sanitize_text_field( $_POST['auto_height'] ) : 'false';
+				$touch_slide  = isset( $_POST['touch_slide'] ) ? sanitize_text_field( $_POST['touch_slide'] ) : 'true';
+				$show_title   = isset( $_POST['show_title'] ) ? sanitize_text_field( $_POST['show_title'] ) : 'false';
+				$show_desc    = isset( $_POST['show_desc'] ) ? sanitize_text_field( $_POST['show_desc'] ) : 'false';
+				$show_link    = isset( $_POST['show_link'] ) ? sanitize_text_field( $_POST['show_link'] ) : 'false';
+				$link_on      = isset( $_POST['link_on'] ) ? sanitize_text_field( $_POST['link_on'] ) : 'false';
+				$link_text    = isset( $_POST['link_text'] ) ? sanitize_text_field( $_POST['link_text'] ) : 'Visit';
+				$text_align   = isset( $_POST['text_align'] ) ? sanitize_text_field( $_POST['text_align'] ) : 'center';
+				$custom_css   = isset( $_POST['custom-css'] ) ? wp_strip_all_tags( $_POST['custom-css'] ) : '';
 
-					$slides       = sanitize_text_field( $_POST['slides'] );
-					$srspeed      = sanitize_text_field( $_POST['srspeed'] );
-					$autoplay     = sanitize_text_field( $_POST['autoplay'] );
-					$navigation   = sanitize_text_field( $_POST['navigation'] );
-					$navigation_n = sanitize_text_field( $_POST['navigation_n'] );
-					$navigation_p = sanitize_text_field( $_POST['navigation_p'] );
-					$auto_height  = sanitize_text_field( $_POST['auto_height'] );
-					$touch_slide  = sanitize_text_field( $_POST['touch_slide'] );
-					$show_title   = sanitize_text_field( $_POST['show_title'] );
-					$show_desc    = sanitize_text_field( $_POST['show_desc'] );
-					$show_link    = sanitize_text_field( $_POST['show_link'] );
-					$link_on      = sanitize_text_field( $_POST['link_on'] );
-					$link_text    = sanitize_text_field( $_POST['link_text'] );
-					$text_align   = sanitize_text_field( $_POST['text_align'] );
-					$custom_css   = isset( $_POST['custom-css'] ) ? wp_strip_all_tags( $_POST['custom-css'] ) : '';
+				$i             = 0;
+				$image_ids     = array();
+				$image_titles  = array();
+				$slide_link    = array();
+				$image_descs   = array();
+				$image_ids_val = isset( $_POST['slide-ids'] ) ? (array) $_POST['slide-ids'] : array();
+				$image_ids_val = array_map( 'sanitize_text_field', $image_ids_val );
 
-					$i             = 0;
-					$image_ids     = array();
-					$image_titles  = array();
-					$slide_link    = array();
-					$image_descs   = array();
-					$image_ids_val = isset( $_POST['slide-ids'] ) ? (array) $_POST['slide-ids'] : array();
-					$image_ids_val = array_map( 'sanitize_text_field', $image_ids_val );
-
-					foreach ( $image_ids_val as $image_id ) {
-						$image_ids[]    = sanitize_text_field( $_POST['slide-ids'][ $i ] );
-						$image_titles[] = sanitize_text_field( $_POST['slide-title'][ $i ] );
-						$slide_link[]   = sanitize_text_field( $_POST['slide-link'][ $i ] );
-						$image_descs[]  = sanitize_textarea_field( $_POST['slide-desc'][ $i ] );
-						$i++;
-					}
-
-					$allslidesetting = array(
-						'slide-ids'    => $image_ids,
-						'slide-title'  => $image_titles,
-						'slide-desc'   => $image_descs,
-						'slide-link'   => $slide_link,
-						'slides'       => $slides,
-						'srspeed'      => $srspeed,
-						'autoplay'     => $autoplay,
-						'navigation'   => $navigation,
-						'navigation_n' => $navigation_n,
-						'navigation_p' => $navigation_p,
-						'auto_height'  => $auto_height,
-						'touch_slide'  => $touch_slide,
-						'show_title'   => $show_title,
-						'show_desc'    => $show_desc,
-						'show_link'    => $show_link,
-						'link_on'      => $link_on,
-						'link_text'    => $link_text,
-						'text_align'   => $text_align,
-						'custom-css'   => $custom_css,
-					);
-
-					$awl_slider_responsive_shortcode_setting = 'awl_sr_settings_' . $post_id;
-					update_post_meta( $post_id, $awl_slider_responsive_shortcode_setting, $allslidesetting );
-				} else {
-					print 'Sorry, your nonce did not verify.';
-					exit;
+				foreach ( $image_ids_val as $image_id ) {
+					$image_ids[]    = sanitize_text_field( $image_id );
+					$image_titles[] = isset( $_POST['slide-title'][ $i ] ) ? sanitize_text_field( $_POST['slide-title'][ $i ] ) : '';
+					$slide_link[]   = isset( $_POST['slide-link'][ $i ] ) ? sanitize_text_field( $_POST['slide-link'][ $i ] ) : '';
+					$image_descs[]  = isset( $_POST['slide-desc'][ $i ] ) ? sanitize_textarea_field( $_POST['slide-desc'][ $i ] ) : '';
+					$i++;
 				}
+
+				$allslidesetting = array(
+					'slide-ids'    => $image_ids,
+					'slide-title'  => $image_titles,
+					'slide-desc'   => $image_descs,
+					'slide-link'   => $slide_link,
+					'slides'       => $slides,
+					'srspeed'      => $srspeed,
+					'autoplay'     => $autoplay,
+					'navigation'   => $navigation,
+					'navigation_n' => $navigation_n,
+					'navigation_p' => $navigation_p,
+					'auto_height'  => $auto_height,
+					'touch_slide'  => $touch_slide,
+					'show_title'   => $show_title,
+					'show_desc'    => $show_desc,
+					'show_link'    => $show_link,
+					'link_on'      => $link_on,
+					'link_text'    => $link_text,
+					'text_align'   => $text_align,
+					'custom-css'   => $custom_css,
+				);
+
+				$awl_slider_responsive_shortcode_setting = 'awl_sr_settings_' . $post_id;
+				update_post_meta( $post_id, $awl_slider_responsive_shortcode_setting, $allslidesetting );
 			}
 		}//end _sr_save_settings()
 
@@ -494,7 +495,7 @@ if ( ! class_exists( 'Slider_Responsive' ) ) {
 		$suffix     = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '-min';
 		$plugin_url = defined( 'AWLSR_PLUGIN_URL' ) ? AWLSR_PLUGIN_URL : plugin_dir_url( __FILE__ );
 		$js_url     = $plugin_url . 'js/awl-owl-carousel' . $suffix . '.js';
-		$ver        = defined( 'AWLSR_PLUGIN_VER' ) ? AWLSR_PLUGIN_VER : '1.6.0';
+		$ver        = defined( 'AWLSR_PLUGIN_VER' ) ? AWLSR_PLUGIN_VER : '1.6.1';
 
 		// css & JS
 		wp_register_script( 'awl-owl-carousel-js', $js_url, array( 'jquery' ), $ver, true );

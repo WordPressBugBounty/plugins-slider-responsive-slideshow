@@ -4,7 +4,7 @@ Donate link: https://paypal.me/awplife
 Tags: slider, image slider, responsive slider, photo carousel, slideshow
 Requires at least: 5.4
 Tested up to: 7.0
-Stable tag: 1.6.0
+Stable tag: 1.6.1
 Requires PHP: 7.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -163,6 +163,11 @@ Also check if your theme has any JavaScript conflicts.
 
 == Changelog ==
 
+= 1.6.1 =
+* Date: 27 July, 2026
+* Fixed: Resolved "Nonce verification failed" error when clicking "Add New Slider" caused by auto-draft post creation in WordPress admin.
+* Enhancement: Added isset() checks for slider settings POST parameters for full PHP 8+ compatibility.
+
 = 1.6.0 =
 * Date: 21 May, 2026
 * Major Security & compatibility audit: added direct file entry guards and directory listing protections
@@ -189,6 +194,9 @@ Also check if your theme has any JavaScript conflicts.
 * Tested with WordPress 6.7.2
 
 == Upgrade Notice ==
+
+= 1.6.1 =
+Bug fix for "Add New Slider" auto-draft creation nonce issue and PHP 8+ compatibility. Recommended for all users.
 
 = 1.6.0 =
 Major security, compatibility, and performance upgrade. Strongly recommended for all users.
